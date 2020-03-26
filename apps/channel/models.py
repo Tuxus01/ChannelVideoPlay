@@ -30,7 +30,7 @@ class videoChannel(ModelBase):
     name = models.CharField('Name Video', max_length=100 )
     description = models.TextField('Description', max_length=1800, blank=True, null=True)
     video = models.FileField(upload_to=RutaVideo, blank=True, null=True) #Video a reproducir en el canal
-    img = models.ImageField(upload_to=RutaVideo, blank=True, null=True) #Imagen a mostrar del canal
+    
 
     def __str__(self):
         return self.name
@@ -43,6 +43,7 @@ class channel(ModelBase):
     ip = models.CharField('IP', max_length=16)
     mac = models.CharField('MacAddress' , max_length=20)
     video = models.ForeignKey(videoChannel, on_delete=models.CASCADE)
+    img = models.ImageField(upload_to=RutaVideo, blank=True, null=True) #Imagen a mostrar del canal
 
     def __str__(self):
         return self.name_channel
