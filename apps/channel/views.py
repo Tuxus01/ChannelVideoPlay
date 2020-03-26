@@ -16,9 +16,7 @@ def Index(request):
     check_ping('192.168.1.1')
     Data = []
     
-
     return render(request, 'index.html' ,ctx)
-
 
 
 def channelsID(request, id):

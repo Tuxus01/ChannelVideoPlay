@@ -29,8 +29,8 @@ def RutaVideo(self,filename):
 class videoChannel(ModelBase):
     name = models.CharField('Name Video', max_length=100 )
     description = models.TextField('Description', max_length=1800, blank=True, null=True)
-    #channel = models.ForeignKey(channel, on_delete=models.CASCADE)
-    video = models.FileField(upload_to=RutaVideo, blank=True, null=True)
+    video = models.FileField(upload_to=RutaVideo, blank=True, null=True) #Video a reproducir en el canal
+    img = models.ImageField(upload_to=RutaVideo, blank=True, null=True) #Imagen a mostrar del canal
 
     def __str__(self):
         return self.name
