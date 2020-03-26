@@ -3,6 +3,8 @@ Envio de multimedia a Smart TV.
 
 Software pensando para satisfacer la necesidad de enviar contenido multimedia a dispositvos Smart Tv por medio de su navegador.
 
+Framework Django
+
 1. Crea el canal 
 2. Crea y Sube el contenido Mp4
 
@@ -14,4 +16,6 @@ libreria JS.
   #live.js
 
 El proyecto ira evolucionando hasta el punto de manejar multimedia de cualquier tipo, paquetes ofimaticos , powerbi etc.
+
+
 
