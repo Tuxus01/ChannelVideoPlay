@@ -1,21 +1,24 @@
 # ChannelVideoPlay
 Envio de multimedia a Smart TV. 
 
-Software pensando para satisfacer la necesidad de enviar contenido multimedia a dispositvos Smart Tv por medio de su navegador.
+Control Multimedia para equipos visuales.
 
-Framework Django
+Requisitos.
+Virtualenv
+python 3
+Django 3
 
-1. Crea el canal 
-2. Crea y Sube el contenido Mp4
+Python manager.py createsuperuser
 
-3. En el canal seleccionas el video a reproducir.
+Proyecto cuenta con 2 tablas.
 
-dichos cambios los realizara en tiempo real sin tener que actulizar la pagina del navegador.
+videoChannel
+Lista de video subidos al app.
 
-libreria JS.
-  #live.js
+channel
+Creacion de canales
+En este apartado se agrega el video a reproducir 
 
-El proyecto ira evolucionando hasta el punto de manejar multimedia de cualquier tipo, paquetes ofimaticos , powerbi etc.
-
+al realizar cambios de video se actuliza el contenido en la pagina del canal.
 
 
